@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:open_kansas/utils/colors.dart';
 
 Widget button1({required VoidCallback fn, required String text}) =>
     GestureDetector(
         onTap: fn,
         child: Card(
-          color: Colors.blue,
+          color: blueColor,
           margin: EdgeInsets.only(left: 12, right: 12, top: 16, bottom: 12),
           elevation: 4,
           shape:

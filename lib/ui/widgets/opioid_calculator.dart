@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluent_ui/fluent_ui.dart' as fluent;
 import 'package:open_kansas/blocs/opioid_conversion_calculator/opioid_conversion_calculator_bloc.dart';
 import 'package:open_kansas/models/opioid_model.dart';
+import 'package:open_kansas/utils/colors.dart';
 import 'package:open_kansas/utils/fonts.dart';
 import 'package:open_kansas/utils/opioid_conversion_rates.dart';
 
@@ -77,6 +78,8 @@ class _OpioidCalculatorState extends State<OpioidCalculator> {
                                           .add(
                                               OpioidConversionCalculatorEventSelectInput(
                                                   newInput: e));
+                                      mmeOutputTextFieldController.text = "";
+                                      outputTextFieldController.text = "";
                                     }))
                             .toList(),
                       ),
@@ -133,7 +136,7 @@ class _OpioidCalculatorState extends State<OpioidCalculator> {
                       }
                     },
                     child: Card(
-                      color: Colors.blue,
+                      color: blueColor,
                       margin: EdgeInsets.only(
                           left: 12, right: 12, top: 16, bottom: 12),
                       elevation: 4,

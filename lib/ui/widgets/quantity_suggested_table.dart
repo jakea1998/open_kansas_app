@@ -17,7 +17,7 @@ class QuantitySuggestedTable extends StatelessWidget {
           child: Column(
             children: [
              const QuantitySuggestedHeader(
-                  title: "Colon and Rectal Surgery", subTitle: "OxyCodone 5mg"),
+                  title: "Colon and Rectal Surgery", subTitle: "oxycodone 5mg"),
             const  QuantitySuggestedRow(
                 title: "Colectomy-Laparoscopic",
                 subTitle: "0-10",
@@ -39,14 +39,14 @@ class QuantitySuggestedTable extends StatelessWidget {
                 color: Colors.blue[50] ?? Colors.blue,
               ),
              const QuantitySuggestedHeader(
-                  title: "Dentistry", subTitle: "OxyCodone 5mg"),
+                  title: "Dentistry", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Dental Extraction",
                 subTitle: "0",
                 color: Colors.white,
               ),
              const  QuantitySuggestedHeader(
-                  title: "General Surgery", subTitle: "OxyCodone 5mg"),
+                  title: "General Surgery", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Anti-reflux (Nissen) - Laparoscopic",
                 subTitle: "0-10",
@@ -88,7 +88,7 @@ class QuantitySuggestedTable extends StatelessWidget {
                 color: Colors.blue[50] ?? Colors.blue,
               ),
               const QuantitySuggestedHeader(
-                  title: "Surgical Oncology", subTitle: "OxyCodone 5mg"),
+                  title: "Surgical Oncology", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Breast Biopsy or Lumpectomy",
                 subTitle: "0-5",
@@ -122,7 +122,7 @@ class QuantitySuggestedTable extends StatelessWidget {
               ),
              const QuantitySuggestedHeader(
                   title: "Obstetrics and Gynecology",
-                  subTitle: "OxyCodone 5mg"),
+                  subTitle: "oxycodone 5mg"),
             const  QuantitySuggestedRow(
                 title: "Cesarean",
                 subTitle: "0-20",
@@ -139,7 +139,7 @@ class QuantitySuggestedTable extends StatelessWidget {
                 color: Colors.white,
               ),
             const  QuantitySuggestedHeader(
-                  title: "Orthopaedic Surgery", subTitle: "OxyCodone 5mg"),
+                  title: "Orthopaedic Surgery", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Total Hip Arthroplasty",
                 subTitle: "0-30",
@@ -151,28 +151,29 @@ class QuantitySuggestedTable extends StatelessWidget {
                 color: Colors.blue[50] ?? Colors.blue,
               ),
             const  QuantitySuggestedHeader(
-                  title: "Thoracic Surgery", subTitle: "OxyCodone 5mg"),
+                  title: "Thoracic Surgery", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Cardiac Surgery via Median Sternotomy",
                 subTitle: "0-25",
                 color: Colors.white,
               ),
               const QuantitySuggestedHeader(
-                  title: "Urology", subTitle: "OxyCodone 5mg"),
+                  title: "Urology", subTitle: "oxycodone 5mg"),
                 const  QuantitySuggestedRow(
                 title: "Prostatectomy",
+                
                 subTitle: "0-10",
                 color: Colors.white,
               ),
             const  QuantitySuggestedHeader(
-                  title: "Vascular Surgery", subTitle: "OxyCodone 5mg"),
+                  title: "Vascular Surgery", subTitle: "oxycodone 5mg"),
                const   QuantitySuggestedRow(
                 title: "Carotid Endarterectomy",
                 subTitle: "0-10",
                 color: Colors.white,
               ),
               const QuantitySuggestedHeader(
-                  title: "Pediatric Surgery (Patients under 18 years of age)", subTitle: "OxyCodone 5mg"),
+                  title: "Pediatric Surgery (Patients under 18 years of age)", subTitle: "oxycodone 5mg"),
              const QuantitySuggestedRow(
                 title: "Adenoidectomy",
                 subTitle: "0",

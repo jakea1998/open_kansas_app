@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:open_kansas/blocs/legal/legal_bloc.dart';
 import 'package:open_kansas/ui/pages/opioid_conversion_calculator_page.dart';
 import 'package:open_kansas/ui/widgets/agree_checkbox.dart';
+import 'package:open_kansas/utils/colors.dart';
 import 'package:open_kansas/utils/fonts.dart';
 import 'package:open_kansas/utils/spacers.dart';
 
@@ -21,6 +22,7 @@ class _LegalPageState extends State<LegalPage> {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
+        color: blueColor,
         child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -28,15 +30,14 @@ class _LegalPageState extends State<LegalPage> {
             Spacer(
               flex: 1,
             ),
-            Column(children: [
-              Text('Open Kansas',style: headerStyle.copyWith(fontSize: 28,color: Colors.blue),),
-              midVSpacer,
-              Text('Placeholder Logo'),
-            ]),
+            Image.asset('lib/assets/general/OpenKSLogo.png',
+            fit: BoxFit.fitWidth,
+            width: 200,
+            ),
             Spacer(
               flex: 1,
             ),
-            Padding(padding: EdgeInsets.all(20),child: Text("This app is provided for informational purposes only.  The user of this app acknowledges that it is the sole responsibility of the prescribing physician and their clinical judgement to ensure safe and proper care of the patient.   Please delete this app if you do not acknowledge this disclaimer.  Any use of this app is understood to be an acknowledgement of indemnification of the owner/creator of the app."),),
+            Padding(padding: EdgeInsets.all(20),child: Text("This app is provided for informational purposes only.  The user of this app acknowledges that it is the sole responsibility of the prescribing physician and their clinical judgement to ensure safe and proper care of the patient.   Please delete this app if you do not acknowledge this disclaimer.  Any use of this app is understood to be an acknowledgement of indemnification of the owner/creator of the app.",style: TextStyle(color: Colors.white),),),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -53,7 +54,7 @@ class _LegalPageState extends State<LegalPage> {
                     children: [
                       TextSpan(
                         text: 'I acknowledge.',
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
                       ),
                     ],
                   ),
@@ -77,7 +78,7 @@ class _LegalPageState extends State<LegalPage> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 clipBehavior: Clip.hardEdge,
-                color: accepted ? Colors.blue : Colors.grey[800],
+                color: accepted ? Colors.white : Colors.grey[200],
                 child: Container(
                   height: 50,
                   width: 200,
@@ -87,14 +88,14 @@ class _LegalPageState extends State<LegalPage> {
                     children: [
                   Text(
                     "Continue",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: blueColor),
                   ),
                   SizedBox(
                     width: 7,
                   ),
                   Icon(
                     Icons.arrow_forward,
-                    color: Colors.white,
+                    color: blueColor,
                     size: 25,
                   )
                     ],

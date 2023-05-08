@@ -36,16 +36,20 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
   url_launcher: ^6.1.4
-  fluent_ui: ^3.11.1
+  
   flutter_bloc: ^8.0.1
   equatable: ^2.0.3
   shared_preferences: ^2.0.15
+  fluent_ui: ^4.0.2
+  printing: ^5.9.3
+  pdf: ^3.8.3
+  advance_pdf_viewer: ^2.0.1
   
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: "^0.9.1"
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -55,7 +59,11 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  android: false
+  ios: true
+  image_path: "lib/assets/general/openksappicon.png"
+  min_sdk_android: 21 
 # The following section is specific to Flutter.
 flutter:
 
@@ -67,6 +75,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - lib/assets/drug_disposal_flyers/
+      - lib/assets/general/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

@@ -27,6 +27,73 @@ class _OpioidCalculatorInfoState extends State<OpioidCalculatorInfo> {
             smallVSpacer,
             Text('Definition',style:subheadingFont),
             Text("Inter-converting between oral and IV opioids is a very common situation encountered in both in treating acute perioperative pain and in discharging patients.  In order to determine equivalency between opioid agents, equianalgesic dosing tables are utilized in order to convert dosing between route of administration in the same agent or to calculate equivalent dosing between agents. Potency between oral and parenteral preparations of the same agent are dependent on the oral bioavailability of the drug which is related to the degree that it undergoes first pass metabolism via the liver before entering the systemic circulation.  Determining equivalency between different opioid agents is however more complex and published equianalgesic dosing tables are not standardized and often provide varied information.  This equianalgesic data aims to provide relative potency information between different opioids, which can be defined according to Knotkova et al. as “the ratio of opioid doses necessary to obtain roughly equivalent [analgesic] effects”. This data was derived from various randomized, controlled, clinical trials conducted in the 1950s and 1960s with typically a partial cross over design where morphine (IV or PO) was used as the standard for comparison in order to derive relative potency information. This data collected over 50 years ago was published as equianalgesic opioid dosing tables that have remained mostly unchanged. This data however has limitations as the study population primary included patients with acute post operative pain and that were relatively opiate naive which calls into question whether this data can truly be applied to populations on chronic and large doses of opioids.  In fact, more recent data demonstrates that these conversion ratios may be too simplistic and can vary based on many factors such as chronicity of opioid use, total daily dose, ethnicity, age, and can even differ depending on the direction of conversion (i.e. conversion from morphine to hydromorphone ¹ hydromorphone to morphine). Increasing research in the area of pharmacogenetics examines how genetic polymorphisms of liver metabolic enzymes can explain some of these highly variable effects seen from patient to patient. An expert panel (Fine et al.) suggested the need to revise these tables with different conversion values that take into account this complexity. In addition updated approaches on opioid switching have been discussed in several resources. Of particular note are substantial changes to calculations when converting to PO methadone, which is more potent than originally thought. Due to potential for serious adverse patient outcomes equianalgesic dose calculations are now adjusted based on the total daily dose of morphine equivalents with higher daily doses requiring increasingly less methadone.  Below is a suggested approach to switching opioid agents adapted from Fine et. al, Gammaitoni et al. and Vadivelu, N. et al. with an emphasis on individualization for each patient.",style:regularText),
+            smallVSpacer,
+            Image.asset('lib/assets/general/equivalencyTable.png',fit:BoxFit.fitWidth,),
+            smallVSpacer,
+            Text("From OpenAnesthesia.org.",style:regularText),
+            
+           /*  DataTable(
+      border: TableBorder.all(color: Colors.black),
+      
+      columns: const [
+         DataColumn(label: Text('Drugs',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,)),
+         DataColumn(label: Text('Equianalgesic\nParenteral\nDose\n(mg)',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,)),
+          DataColumn(label: Text('Equivalent\nOral\nDose (mg)',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,)),
+           DataColumn(label: Text('Parenteral:\nOral\ndosing\nratio\n(Same\nDrug)',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,)),
+            DataColumn(label: Text('Equianalgesic\ndose ratio\n with\nMorphine\n(approximations)',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,)),
+      ],
+      columnSpacing: 3,
+      rows: <DataRow>[
+        DataRow(
+          cells: <DataCell>[
+            DataCell(Container(
+
+            ))
+            ,DataCell(Container()),
+            DataCell(Container()),
+            DataCell(Container()),
+            DataCell(Container())
+         
+          /* 
+            TableCell(
+              verticalAlignment: TableCellVerticalAlignment.middle,
+              child: Padding(
+                padding: const EdgeInsets.only(right:4.0,left: 4),
+                child: Container(
+                  child: Text('Equianalgesic\ndose ratio\n with\nMorphine\n(approximations)',style:TextStyle(fontSize: 10),textAlign: TextAlign.center,),
+          
+
+                ),
+              ),
+            ), */
+          ],
+        ),
+        /* TableRow(
+          decoration: const BoxDecoration(
+            color: Colors.grey,
+          ),
+          children: <Widget>[
+            Container(
+              height: 64,
+              width: 128,
+              color: Colors.purple,
+            ),
+            Container(
+              height: 32,
+              color: Colors.yellow,
+            ),
+            Center(
+              child: Container(
+                height: 32,
+                width: 32,
+                color: Colors.orange,
+              ),
+            ),
+          ],
+        ), */
+      ],
+    ) */
+          
           ],
         ),
       )),
